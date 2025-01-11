@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    android:padding="5dip"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/status_bar_shape"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/username"
+        android:textStyle="bold"
+        android:textSize="15dip"
+        android:textColor="@color/teal_700"/>
+
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/content"
+        android:textSize="16dip"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/datetime"
+        android:textSize="13dip"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

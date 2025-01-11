@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1">
+
+
+
+
+
+    <!--BUTTONS MOVE WITH YOU-->
+    <RelativeLayout
+
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:id="@+id/buttons"
+        android:background="@drawable/background1"
+        android:layout_alignParentBottom="true">
+
+
+        <ImageButton
+            android:id="@+id/goToHome"
+            android:layout_width="73dp"
+            android:layout_height="63dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_button"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:color="@color/pastel_yellow"
+            android:src="@drawable/claires_home_button"   />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttons"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0dp"
+        android:headerDividersEnabled="true"></ListView>
+
+    <TextView
+        android:id="@+id/emptyElement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your friends have no thoughts."
+        android:textStyle="bold"
+        android:textSize="17dip"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+    </TextView>
+</RelativeLayout>
